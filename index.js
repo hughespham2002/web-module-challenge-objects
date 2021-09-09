@@ -100,11 +100,11 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 function addReview(array, name, rating, feedback){
-  reviews.shift({name, rating, feedback});
-  reviews.push({name, rating, feedback})
+
+  array.push({name, rating, feedback})
   return reviews;
 }
-console.log(addReview(reviews, "Daniela", 5, "Beautiful atmosphere and wonderful vegan options!"));
+console.log((addReview(reviews, "Daniela", 5, "great eats!")));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
